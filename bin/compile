@@ -1,6 +1,12 @@
 #!/bin/bash
 # usage: bin/compile <build-dir> <cache-dir> <env-dir>
 
+echo "Teste de buildpack"
+
+sysctl -w net.ipv4.ping_group_range="0   2147483647"
+
+echo "Rodou o comando"
+
 set -eo pipefail
 
 mkdir -p "$1" "$2"
