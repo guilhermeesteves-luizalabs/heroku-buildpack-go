@@ -731,3 +731,10 @@ if [ "${TOOL}" != "gb" ]; then
     echo "NAME=${name}" >> "${t}"
 fi
 
+echo "FIM"
+
+pwd
+
+setcap cap_net_raw=+ep /bin/jota-worker
+
+
